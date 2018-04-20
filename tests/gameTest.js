@@ -14,4 +14,8 @@ describe('game', function(){
     game.placeShip(1)
     expect(game.board).toContain('ship')
   })
+
+  it('initialises with an empy currentShip', function(){
+    expect(game.currentShip).toEqual('')
+  })
 })
