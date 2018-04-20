@@ -18,4 +18,8 @@ describe('game', function(){
   it('initialises with an empy currentShip', function(){
     expect(game.currentShip).toEqual('')
   })
+
+  it('has an array of ships', function(){
+    expect(game.ships).toEqual(['Small Ship', 'Medium Ship', 'Big Ship'])
+  })
 })
