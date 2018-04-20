@@ -22,4 +22,9 @@ describe('game', function(){
   it('has an array of ships', function(){
     expect(game.ships).toEqual(['Small Ship', 'Medium Ship', 'Big Ship'])
   })
+
+  it('a ship can be selected and changes currentShip', function(){
+    game.selectShip('Small Ship')
+    expect(game.currentShip).toEqual('Small Ship')
+  })
 })

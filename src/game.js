@@ -8,4 +8,8 @@ class Game {
   placeShip(target){
     this.board.splice(target -1, 1, 'ship')
   }
+
+  selectShip(ship){
+    this.currentShip = ship
+  }
 }
