@@ -6,7 +6,14 @@ class Game {
   }
 
   placeShip(target){
-    this.board.splice(target -1, 1, 'ship')
+    if (this.currentShip == 'Medium Ship') {
+      this.board.splice(target -1, 1, 'Medium Ship')
+      this.board.splice(target -2, 1, 'Medium Ship')
+      this.board.splice(target, 1, 'Medium Ship')
+    } else {
+      this.board.splice(target -1, 1, 'Ship')
+    }
+
   }
 
   selectShip(ship){

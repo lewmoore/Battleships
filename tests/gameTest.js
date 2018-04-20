@@ -12,7 +12,7 @@ describe('game', function(){
 
   it('places a ship on the board', function(){
     game.placeShip(1)
-    expect(game.board).toContain('ship')
+    expect(game.board).toContain('Ship')
   })
 
   it('initialises with an empy currentShip', function(){
@@ -26,5 +26,13 @@ describe('game', function(){
   it('a ship can be selected and changes currentShip', function(){
     game.selectShip('Small Ship')
     expect(game.currentShip).toEqual('Small Ship')
+  })
+
+  it('medium ship takes up 3  spaces', function(){
+    game.selectShip('Medium Ship')
+    game.placeShip(2)
+    expect(game.board[0]).toEqual('Medium Ship')
+    expect(game.board[1]).toEqual('Medium Ship')
+    expect(game.board[2]).toEqual('Medium Ship')
   })
 })
