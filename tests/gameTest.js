@@ -20,7 +20,7 @@ describe('game', function(){
   })
 
   it('has an array of ships', function(){
-    expect(game.ships).toEqual(['Small Ship', 'Medium Ship', 'Big Ship'])
+    expect(game.ships).toEqual(['Small Ship', 'Medium Ship', 'Large Ship'])
   })
 
   it('a ship can be selected and changes currentShip', function(){
@@ -30,9 +30,19 @@ describe('game', function(){
 
   it('medium ship takes up 3  spaces', function(){
     game.selectShip('Medium Ship')
-    game.placeShip(2)
+    game.placeShip(1)
     expect(game.board[0]).toEqual('Medium Ship')
     expect(game.board[1]).toEqual('Medium Ship')
     expect(game.board[2]).toEqual('Medium Ship')
+  })
+
+  it('Large Ship takes up 5 spaces', function(){
+    game.selectShip('Large Ship')
+    game.placeShip(1)
+    expect(game.board[0]).toEqual('Large Ship')
+    expect(game.board[1]).toEqual('Large Ship')
+    expect(game.board[2]).toEqual('Large Ship')
+    expect(game.board[3]).toEqual('Large Ship')
+    expect(game.board[4]).toEqual('Large Ship')
   })
 })
