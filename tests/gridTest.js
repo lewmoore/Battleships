@@ -22,4 +22,14 @@ describe("Grid", () => {
   it("gridE initialises with 5 elements", () => {
     expect(grid.gridE).toEqual(["E1", "E2", "E3", "E4", "E5"]);
   });
+
+  it("displays the grid", () => {
+    expect(grid.display).toEqual(
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5" / n[("E1", "E2", "E3", "E4", "E5")]
+    );
+  });
 });
