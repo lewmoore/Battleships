@@ -7,7 +7,7 @@ class Grid {
     this.gridE = ["E1", "E2", "E3", "E4", "E5"];
   }
 
-  display() {
+  displayGrid() {
     // this.gridA.forEach(cell => {
     //   console.log(" | " + cell + " | ");
     return (
