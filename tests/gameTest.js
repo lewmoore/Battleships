@@ -35,6 +35,13 @@ describe("game", function() {
     ]);
   });
 
+  it('a ship can be selected and changes currentShip', () => {
+    game.selectShip('Small Ship')
+    expect(game.currentShip).toEqual('Small Ship')
+  })
+
+  
+
   //   it('places a ship on the board', () => {
   //     game.placeShip(1)
   //     expect(game.board).toContain('Ship')
@@ -48,10 +55,7 @@ describe("game", function() {
   //     expect(game.ships).toEqual(['Small Ship', 'Medium Ship', 'Large Ship'])
   //   })
   //
-  //   it('a ship can be selected and changes currentShip', () => {
-  //     game.selectShip('Small Ship')
-  //     expect(game.currentShip).toEqual('Small Ship')
-  //   })
+
   //
   //   it('medium ship takes up 3  spaces', () => {
   //     game.selectShip('Medium Ship')
