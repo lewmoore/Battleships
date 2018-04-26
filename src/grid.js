@@ -8,8 +8,6 @@ class Grid {
   }
 
   displayGrid() {
-    // this.gridA.forEach(cell => {
-    //   console.log(" | " + cell + " | ");
     return (
       "\n | " +
       this.gridA[0] +
