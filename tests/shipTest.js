@@ -2,19 +2,18 @@ describe("Ship tests", () => {
   var ship;
 
   beforeEach(() => {
-    ship = new Ship(3);
+    ship = new Ship(1);
   });
 
   it("initialises with size property", () => {
-    expect(ship.size).toEqual(3);
+    expect(ship.size).toEqual(1);
   });
 
   it("initialises with name property default to an emtpy string", () => {
-    expect(ship.name).toEqual("");
+    expect(ship.type).not.toBe(true);
   });
 
-  it("defines the name of the ship", () => {
-    ship.defineName(1);
-    expect(ship.name).toEqual("Small ship");
-  });
+  it('ship type is determined based on the size of ship', () => {
+    expect(ship.type).toEqual('Small')
+  })
 });
