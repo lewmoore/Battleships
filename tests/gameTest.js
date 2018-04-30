@@ -3,7 +3,7 @@ describe("game", function() {
 
   beforeEach(function() {
     game = new Game();
-    grid = new Grid()
+    grid = new Grid();
   });
 
   it("initialises with an instance of Grid as the board", () => {
@@ -13,5 +13,5 @@ describe("game", function() {
   it('a ship can be selected and changes currentShip', () => {
     game.selectShip('Small Ship')
     expect(game.currentShip).toEqual('Small Ship')
-  })
+  });
 });
