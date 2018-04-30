@@ -16,8 +16,8 @@ describe("game", function() {
     expect(game.currentShip).toEqual('Small Ship')
   });
 
-  // it('a ship can be placed on the board', () => {
-  //   game.placeShip(ship, 'A1')
-  //   expect(game.board.grid[0]).toEqual(['ship'])
-  // })
+  it('a ship can be placed on the board', () => {
+    game.placeShip(ship, 'A1')
+    expect(game.board.grid[0]).toEqual('ship')
+  })
 });

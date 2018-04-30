@@ -8,7 +8,8 @@ class Game {
     this.currentShip = ship
   }
 
-  // placeShip(ship, target){
-  //   this.board.
-  // }
+  placeShip(ship, target){
+    var index = this.board.grid.findIndex(element => element == target)
+    this.board.grid[index] = 'ship'
+  }
 }
