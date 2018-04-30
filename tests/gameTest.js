@@ -4,7 +4,7 @@ describe("game", function() {
   beforeEach(function() {
     game = new Game();
     grid = new Grid();
-    ship = new Ship(1)
+    ship = jasmine.createSpyObj('ship', { 'size' : 1 })
   });
 
   it("initialises with an instance of Grid as the board", () => {
