@@ -24,6 +24,7 @@ describe("game", function() {
 
   it('a medium ship takes up two spaces on the board', () => {
     game.placeShip(mediumShip, 'B1')
+    expect(game.board.grid[5]).toEqual('X')
     expect(game.board.grid[6]).toEqual('X')
   });
 });
