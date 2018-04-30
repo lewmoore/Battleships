@@ -10,6 +10,10 @@ class Game {
 
   placeShip(ship, target){
     var index = this.board.grid.findIndex(element => element == target)
-    this.board.grid[index] = 'X'
+    if (ship.size == 2){
+      this.board.grid.splice(index, 2, 'X', 'X')
+    } else {
+      this.board.grid[index] = 'X'
+    }
   }
 }
