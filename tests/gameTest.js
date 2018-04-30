@@ -39,39 +39,4 @@ describe("game", function() {
     game.selectShip('Small Ship')
     expect(game.currentShip).toEqual('Small Ship')
   })
-
-  
-
-  //   it('places a ship on the board', () => {
-  //     game.placeShip(1)
-  //     expect(game.board).toContain('Ship')
-  //   })
-  //
-  //   it('initialises with an empy currentShip', () => {
-  //     expect(game.currentShip).toEqual('')
-  //   })
-  //
-  //   it('has an array of ships', () => {
-  //     expect(game.ships).toEqual(['Small Ship', 'Medium Ship', 'Large Ship'])
-  //   })
-  //
-
-  //
-  //   it('medium ship takes up 3  spaces', () => {
-  //     game.selectShip('Medium Ship')
-  //     game.placeShip(1)
-  //     expect(game.board[0]).toEqual('Medium Ship')
-  //     expect(game.board[1]).toEqual('Medium Ship')
-  //     expect(game.board[2]).toEqual('Medium Ship')
-  //   })
-  //
-  //   it('Large Ship takes up 5 spaces', () => {
-  //     game.selectShip('Large Ship')
-  //     game.placeShip(1)
-  //     expect(game.board[0]).toEqual('Large Ship')
-  //     expect(game.board[1]).toEqual('Large Ship')
-  //     expect(game.board[2]).toEqual('Large Ship')
-  //     expect(game.board[3]).toEqual('Large Ship')
-  //     expect(game.board[4]).toEqual('Large Ship')
-  //   })
 });
