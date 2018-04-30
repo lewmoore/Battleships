@@ -1,65 +1,61 @@
 class Grid {
   constructor() {
-    this.gridA = ["A1", "A2", "A3", "A4", "A5"];
-    this.gridB = ["B1", "B2", "B3", "B4", "B5"];
-    this.gridC = ["C1", "C2", "C3", "C4", "C5"];
-    this.gridD = ["D1", "D2", "D3", "D4", "D5"];
-    this.gridE = ["E1", "E2", "E3", "E4", "E5"];
+    this.grid = ["A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "C1", "C2", "C3", "C4", "C5", "D1", "D2", "D3", "D4", "D5", "E1", "E2", "E3", "E4", "E5"];
   }
 
   displayGrid() {
     return (
       "\n | " +
-      this.gridA[0] +
+      this.grid[0] +
       " | " +
-      this.gridA[1] +
+      this.grid[1] +
       " | " +
-      this.gridA[2] +
+      this.grid[2] +
       " | " +
-      this.gridA[3] +
+      this.grid[3] +
       " | " +
-      this.gridA[4] +
+      this.grid[4] +
       " | " +
       "\n---------------------------\n | " +
-      this.gridB[0] +
+      this.grid[5] +
       " | " +
-      this.gridB[1] +
+      this.grid[6] +
       " | " +
-      this.gridB[2] +
+      this.grid[7] +
       " | " +
-      this.gridB[3] +
+      this.grid[8] +
       " | " +
-      this.gridB[4] +
+      this.grid[9] +
       " | \n---------------------------\n | " +
-      this.gridC[0] +
+      this.grid[10] +
       " | " +
-      this.gridC[1] +
+      this.grid[11] +
       " | " +
-      this.gridC[2] +
+      this.grid[12] +
       " | " +
-      this.gridC[3] +
+      this.grid[13] +
       " | " +
-      this.gridC[4] +
+      this.grid[14] +
       " | \n---------------------------\n | " +
-      this.gridD[0] +
+      this.grid[15] +
       " | " +
-      this.gridD[1] +
+      this.grid[16] +
       " | " +
-      this.gridD[2] +
+      this.grid[17] +
       " | " +
-      this.gridD[3] +
+      this.grid[18] +
       " | " +
-      this.gridD[4] +
+      this.grid[19] +
       " | \n---------------------------\n | " +
-      this.gridE[0] +
+      this.grid[20] +
       " | " +
-      this.gridE[1] +
+      this.grid[21] +
       " | " +
-      this.gridE[2] +
+      this.grid[22] +
       " | " +
-      this.gridE[3] +
+      this.grid[23] +
       " | " +
-      this.gridE[4] +
+      this.grid[24] +
       " | \n---------------------------\n"
     );
   }

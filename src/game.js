@@ -7,4 +7,8 @@ class Game {
   selectShip(ship){
     this.currentShip = ship
   }
+
+  // placeShip(ship, target){
+  //   this.board.
+  // }
 }
