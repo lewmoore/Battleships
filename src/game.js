@@ -10,6 +10,6 @@ class Game {
 
   placeShip(ship, target){
     var index = this.board.grid.findIndex(element => element == target)
-    this.board.grid[index] = 'ship'
+    this.board.grid[index] = 'X'
   }
 }

@@ -18,6 +18,6 @@ describe("game", function() {
 
   it('a ship can be placed on the board', () => {
     game.placeShip(ship, 'A1')
-    expect(game.board.grid[0]).toEqual('ship')
+    expect(game.board.grid[0]).toEqual('X')
   })
 });
