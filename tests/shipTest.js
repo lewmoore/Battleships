@@ -16,4 +16,9 @@ describe("Ship tests", () => {
   it('ship type is determined based on the size of ship', () => {
     expect(ship.type).toEqual('Small')
   })
+
+  it('type is medium if size is equal to 2', () => {
+    ship = new Ship(2)
+    expect(ship.type).toEqual('Medium')
+  })
 });

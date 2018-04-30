@@ -8,6 +8,8 @@ class Ship {
   _decideShipType(){
     if (this.size == 1){
       this.type = 'Small'
+    } else if (this.size == 2){
+      this.type = 'Medium'
     }
   }
 }
