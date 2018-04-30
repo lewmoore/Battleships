@@ -6,7 +6,6 @@ describe("player", function() {
   });
 
   it("returns player move", function() {
-    // player = jasmine.createSpyObj("player", { move: "A1" });
     expect(player.currentMove).toEqual("A1");
   });
 });

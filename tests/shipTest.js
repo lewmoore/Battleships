@@ -9,7 +9,7 @@ describe("Ship tests", () => {
     expect(ship.size).toEqual(3);
   });
 
-  it("defines the name", () => {
+  it("initialises with name property default to an emtpy string", () => {
     expect(ship.name).toEqual("");
   });
 
