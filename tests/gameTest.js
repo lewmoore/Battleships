@@ -34,7 +34,7 @@ describe("game", function() {
     expect(game.board.grid[10]).toEqual('X');
     expect(game.board.grid[11]).toEqual('X');
     expect(game.board.grid[12]).toEqual('X');
-  })
+  });
 
   it('selects vertical or horizontal disposition', function() {
     expect(game.direction).toEqual('horizontal');
@@ -43,5 +43,9 @@ describe("game", function() {
   it('chages the direction', function() {
     game.changeDirection();
     expect(game.direction).toEqual('vertical');
+  });
+
+  it('checks if the direction is horizontal or vertical', function() {
+
   });
 });

@@ -13,6 +13,7 @@ class Game {
     this.direction === 'horizontal' ? this.direction ='vertical' : this.direction ='horizontal';
   }
 
+
   placeShip(ship, target){
     var index = this.board.grid.findIndex(element => element == target)
     for (var i = 0; i < ship.size; i++){
