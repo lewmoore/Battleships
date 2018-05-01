@@ -4,7 +4,7 @@ describe("game", function() {
   beforeEach(function() {
     game = new Game();
     grid = new Grid();
-    ship = jasmine.createSpyObj('ship', { 'size' : 1 })
+    ship = jasmine.createSpy('ship', { 'size' : 1 })
     mediumShip = jasmine.createSpy('ship', { 'size': 2 })
     largeShip = jasmine.createSpy('ship', { 'size' : 3 })
   });
@@ -21,7 +21,6 @@ describe("game", function() {
   it('a ship can be placed on the board', () => {
     game.placeShip(ship, 'A1')
     expect(game.board.grid[0]).toEqual('X')
-    // console.log(game.board.grid)
   });
 
   it('a medium ship takes up two spaces on the board', () => {

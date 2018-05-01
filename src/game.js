@@ -21,8 +21,7 @@ class Game {
   //
   placeShip(ship, target){
     var index = this.board.grid.findIndex(element => element == target)
-    for (var i = 0; i <= ship.size; i++){
-      console.log(this.board.grid)
+    for (var i = 0; i < ship.size; i++){
       this.board.grid.splice(index + i, 1, 'X')
     }
   }
