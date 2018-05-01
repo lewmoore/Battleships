@@ -15,24 +15,33 @@ describe("game", function() {
 
   it('a ship can be selected and changes currentShip', () => {
     game.selectShip('Small Ship')
-    expect(game.currentShip).toEqual('Small Ship')
+    expect(game.currentShip).toEqual('Small Ship');
   });
 
   it('a ship can be placed on the board', () => {
     game.placeShip(ship, 'A1')
-    expect(game.board.grid[0]).toEqual('X')
+    expect(game.board.grid[0]).toEqual('X');
   });
 
   it('a medium ship takes up two spaces on the board', () => {
     game.placeShip(mediumShip, 'B1')
-    expect(game.board.grid[5]).toEqual('X')
-    expect(game.board.grid[6]).toEqual('X')
+    expect(game.board.grid[5]).toEqual('X');
+    expect(game.board.grid[6]).toEqual('X');
   });
 
   it('a big ship takes up 3 space on the board', () => {
     game.placeShip(largeShip, 'C1')
-    expect(game.board.grid[10]).toEqual('X')
-    expect(game.board.grid[11]).toEqual('X')
-    expect(game.board.grid[12]).toEqual('X')
+    expect(game.board.grid[10]).toEqual('X');
+    expect(game.board.grid[11]).toEqual('X');
+    expect(game.board.grid[12]).toEqual('X');
   })
+
+  it('selects vertical or horizontal disposition', function() {
+    expect(game.direction).toEqual('horizontal');
+  });
+
+  it('chages the direction', function() {
+    game.changeDirection();
+    expect(game.direction).toEqual('vertical');
+  });
 });

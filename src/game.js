@@ -1,11 +1,16 @@
 class Game {
   constructor(){
-    this.board = new Grid()
-    this.currentShip = ''
+    this.board = new Grid();
+    this.currentShip = '';
+    this.direction = 'horizontal';
   }
 
   selectShip(ship){
     this.currentShip = ship
+  }
+
+  changeDirection(){
+    this.direction === 'horizontal' ? this.direction ='vertical' : this.direction ='horizontal';
   }
 
   placeShip(ship, target){
