@@ -16,6 +16,11 @@ class Game {
 
   placeShip(ship, target){
     var index = this.board.grid.findIndex(element => element == target)
+    if (this.direction == 'vertical') {
+      for (var i = 0; i < ship.size; i++){
+        this.board.grid.splice(index + 5, 1, 'X')
+      }
+    }
     for (var i = 0; i < ship.size; i++){
       this.board.grid.splice(index + i, 1, 'X')
     }

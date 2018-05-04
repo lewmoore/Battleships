@@ -44,4 +44,11 @@ describe("game", function() {
     game.changeDirection();
     expect(game.direction).toEqual('vertical');
   });
+
+  it('can place a ship vertically on the board', function(){
+    game.changeDirection()
+    game.placeShip(mediumShip, 'A1');
+    expect(game.board.grid[0]).toEqual('X');
+    expect(game.board.grid[5]).toEqual('X');
+  })
 });
