@@ -8,7 +8,6 @@ class Game {
     this.direction === 'horizontal' ? this.direction ='vertical' : this.direction ='horizontal';
   }
 
-
   placeShip(ship, target){
     if (this.direction == 'vertical') {
       this._placeShipVertical(ship, target)
