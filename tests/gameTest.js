@@ -36,16 +36,12 @@ describe("game", function() {
     expect(game.board.grid[12]).toEqual('X');
   });
 
-  it('selects vertical or horizontal disposition', function() {
+  it('initialises with a direction', function() {
     expect(game.direction).toEqual('horizontal');
   });
 
   it('chages the direction', function() {
     game.changeDirection();
     expect(game.direction).toEqual('vertical');
-  });
-
-  it('checks if the direction is horizontal or vertical', function() {
-
   });
 });
