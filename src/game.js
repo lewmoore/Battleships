@@ -15,14 +15,23 @@ class Game {
 
 
   placeShip(ship, target){
-    var index = this.board.grid.findIndex(element => element == target)
     if (this.direction == 'vertical') {
-      for (var i = 0; i < ship.size; i++){
-        this.board.grid.splice(index + 5, 1, 'X')
-      }
+      this._placeShipVertical(ship, target)
     }
+    this._placeShipHorizontal(ship, target)
+  }
+
+  _placeShipHorizontal(ship, target){
+    var index = this.board.grid.findIndex(element => element == target)
     for (var i = 0; i < ship.size; i++){
       this.board.grid.splice(index + i, 1, 'X')
+    }
+  }
+
+  _placeShipVertical(ship, target){
+    var index = this.board.grid.findIndex(element => element == target)
+    for (var i = 0; i < ship.size; i++){
+      this.board.grid.splice(index + 5, 1, 'X')
     }
   }
 }
