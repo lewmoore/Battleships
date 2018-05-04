@@ -14,7 +14,7 @@ describe("opponent", function() {
 
   it('places a single ship on the board automatically', function(){
     console.log(grid.grid)
-    expect(opponent.board.grid).toEqual(grid.grid)
+    expect(opponent.board.grid[0]).toEqual('X')
   })
 
 });
