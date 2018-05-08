@@ -1,6 +1,7 @@
 class Opponent {
   constructor(grid = new Grid()){
     this.board = grid
+    this.direction = 'Horizontal'
 
     var target = this.targetGenerator()
     this.placeShip(new Ship(1), target)
