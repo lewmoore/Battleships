@@ -1,4 +1,4 @@
-describe("opponent", function() {
+describe("Opponent", function() {
   var opponent;
   var spyGrid;
 

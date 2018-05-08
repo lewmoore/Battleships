@@ -1,4 +1,4 @@
-describe("game", function() {
+describe("Game", function() {
   var game;
 
   beforeEach(function() {

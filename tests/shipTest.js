@@ -1,4 +1,4 @@
-describe("Ship tests", () => {
+describe("Ship", () => {
   var ship;
 
   beforeEach(() => {
