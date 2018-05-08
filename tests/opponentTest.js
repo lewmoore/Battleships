@@ -17,7 +17,7 @@ describe("opponent", function() {
     expect(opponent.board.grid[7]).toEqual('X')
   })
 
-  it('places largeShip on the board', function(){
+  it('places a large ship on the board upon creation', function(){
     expect(opponent.board.grid[20]).toEqual('X')
     expect(opponent.board.grid[21]).toEqual('X')
     expect(opponent.board.grid[22]).toEqual('X')
