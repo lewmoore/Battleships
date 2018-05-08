@@ -31,6 +31,11 @@ describe("Opponent", function() {
   // })
 
   it('initialises with a direction prop', function(){
-    expect(opponent.direction).toEqual('Horizontal')
+    expect(opponent.direction).toEqual('horizontal')
+  })
+
+  it('direction prop can be changed by changeDirection function', function(){
+    opponent.changeDirection()
+    expect(opponent.direction).toEqual('vertical')
   })
 });
